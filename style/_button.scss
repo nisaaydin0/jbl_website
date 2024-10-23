@@ -1,0 +1,28 @@
+.button {
+  background: linear-gradient(135deg, #5e5a59, #887870);  // Gradient
+  text-decoration: none;
+  padding: 12px 24px;  // Padding for spacing inside the button
+  color: #fff;
+  border-radius: 32px;  // Round button edges
+  display: inline-block;  // Inline-flex to align icon and text properly
+  align-items: center;  // Center content vertically
+  justify-content: center;  // Center content horizontally
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  border: none;
+  width: auto;  // Button only takes space based on content, no stretching
+  box-shadow: 0px 12px 32px rgba(39, 18, 8, 0.2);  // Shadow for depth
+
+  i {
+    font-size: 18px;  // Icon size
+    color: orangered;
+    margin-left: 8px;  // Space between text and icon
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, #444, #666);  // Darker gradient on hover
+    box-shadow: 0px 12px 32px rgba(39, 18, 8, 0.5);  // Deeper shadow on hover
+  }
+}

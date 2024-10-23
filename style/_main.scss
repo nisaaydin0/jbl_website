@@ -1,0 +1,93 @@
+.home{
+    &__container{
+        display: flex;
+        padding: 112px 16px;
+        position: relative;
+        row-gap: 40px;
+    }
+    .button{
+        margin-top: 30px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+
+    }
+    &__content{
+        position: relative;
+        display: grid;
+        justify-self: center;
+    }
+    &__img{
+        width: 220px;
+    }
+    &__title{
+        font-size: 10rem;
+        color:orangered;
+        top: -32px;
+        position: absolute;
+        display: flex;
+        column-gap: 7px;
+        justify-self: center;
+        span:nth-child(2){
+            z-index: -1;
+        }
+    }
+    &__tooltip{
+        position: absolute;
+        top: -25px;
+        right: 20px;
+        &-img{
+            width: 60px;
+        }
+        &-text{
+            background-color: rgb(62, 59, 53);
+            color: aliceblue;
+            padding: 6px 12px;
+            transform: translate(60px,-40px);
+            border-radius:64px;
+            font-weight: 600;
+
+        }
+
+    }
+    &__social{
+        display: grid;
+        justify-content: center;
+        row-gap: 96px;
+        position: absolute;
+        top: 140px;
+        left: -64px;
+        &-text{
+            rotate: 90deg;
+            position: relative;
+            &::after{
+                content: "";
+                background-color: bisque;
+                width: 48px;
+                height: 1px;
+                top: 0;
+                bottom: 0;
+                right: -64px;
+                position: absolute;
+                margin: auto;
+            }
+
+        }
+        &-links{
+            display: grid;
+            row-gap: 12px;
+            margin-left: 22px;
+        }
+        &-link{
+            color: bisque;
+            font-size: 20px;
+            transition: all 0.4s;
+            &:hover{
+                color: orangered;
+            }
+
+        }
+       
+
+    }
+}

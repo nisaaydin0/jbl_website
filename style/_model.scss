@@ -1,0 +1,47 @@
+.model{
+    h2{
+        text-align: center;
+    }
+    &__container{
+        padding-top: 32px;
+    }
+    &__content{
+        position: relative;
+        justify-self: center;
+    }
+    &__img{
+        width: 280px;
+    }
+    &__tooltip{
+        position: absolute;
+        &-text{
+            background-color: rgba(114, 94, 98, 0.5);
+            padding: 6px 12px;
+            border-radius: 64px;
+            font-size: 800;
+            position: absolute;
+            white-space: nowrap;
+            transform: translate(0px, -20px);
+
+}
+                &-1{
+                    top: 100px;
+                    left: 50px;
+                }
+                &-2{
+                    top: 40px;
+                    right: 24px;
+                }
+                &-3{
+                    bottom: 28px;
+                    left: 50px;
+                }
+                &-4{
+                    left:180px;
+                    bottom: 100px;
+                }
+
+            }
+
+    
+}

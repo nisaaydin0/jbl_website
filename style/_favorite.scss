@@ -1,0 +1,39 @@
+.favorite {
+    
+    text-align: center;
+    padding: 10px 40px;
+
+    &-card {
+     
+        display: flex;
+        justify-content: center;
+        gap: 30px;  // Space between images
+        flex-wrap: wrap;  // Ensures the items wrap if they overflow the container
+    }
+
+    .favorite-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-width: 200px;  // Adjust this width as needed
+            height: auto;  // Keeps the image's aspect ratio
+            &:hover{
+                scale: 1.18;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:850px){
+    .favorite{
+        &-card{
+            align-items: center;
+            flex-direction: column;
+
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.footer{
+   
+    padding-block: 32px;
+    display: grid;
+    margin-left: 40px;
+    &__container{
+        row-gap: 64px;
+    }
+    &__logo{
+        color: orangered;
+        font-size: medium;
+        font-weight: 600;
+    }
+    &__data{
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        gap: 20px;
+        align-items: start;
+    }
+    &__title{
+        font-size: 10px;
+        margin-bottom: 32px;
+    }
+    &__links{
+        display: grid;
+        row-gap: 15px;
+    
+    
+    }
+    &__link{
+        color: bisque;
+        transition: all 0.4s;
+        text-decoration: none;
+        &:hover{
+            color: orange;
+            cursor: grab;
+        }
+
+    }
+    &__group{
+        display: grid;
+    
+        input{
+            outline: none;
+            border: none;
+           
+            padding: 20px 30px;
+            width: 70%;
+            border-radius: 64px;
+            background-color:rgb(70, 66, 66) ;
+            color: azure;
+
+            }
+            button{
+                width: 70%;
+            }
+    }
+    &__button{
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+    }
+    &__social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        div{
+            display: flex;
+            gap: 16px;
+            margin-bottom: 10px;
+            a{
+                color: aliceblue;
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+    }
+
+
+}
+
+
